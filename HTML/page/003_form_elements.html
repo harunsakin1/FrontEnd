@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 200px;
+        }
+        input{
+            display: inline-block;
+            width: 250px;
+            height: 22px;
+        }
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="text-align: center; color: maroon;">
+        <h1>Form Bileşenleri - Kullanıcı Bilgi Girişleri</h1>
+    </div>
+    <div id="body">
+        <!--
+        Input type -> input bileşeninin türünü belirtir. 
+        Türler : text, radio, password, email, tel, checkbox
+        Input name -> form bileşeni ilgili end point'e bilgi iletirken değişken adı olarak kullanılır.
+        Input id -> bu tag'in benzersiz numarası
+        Label for -> ilgili bileşeni işaret ettiğini belirtmek için kullanırız. Gerekli değildir.
+        -->
+
+        <!--
+        DİKKAT !!!!!
+        inline element ->Sadece kendi hacimleri kadar yer kaplarlar ve kendilerinden sdonra gelen element'e bitişik şekilde görünürler.
+        block element -> Bulundukları satırın tamamını kaplarlar.
+        inline-block -> Her iki türde de davranabilen elementlerdir.       
+        -->
+
+        <div>
+            <label for="adSoyad">Adınız Soyadınız : </label>
+            <input type="text" name="adSoyad" id="adSoyad">
+        </div>
+        <div>
+            <label for="email">Email adresiniz :  </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="username">Kullanıcı adınız : </label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Şifreniz : </label>
+            <input type="password" name="sifre" id="sifre">
+        </div>
+        <div>
+            <!--
+            CheckBox'lardan istediğimiz kadar seçim yapabiliriz. Değer sunucuya boolean şekilde döner.
+            -->
+            <label style="font-weight: bolder;"> İlgi Alanlarınız</label><br>
+            <input type="checkbox"> <label>Yüzmek</label><br>
+            <input type="checkbox"> <label>Kitap Okumak</label><br>
+            <input type="checkbox"> <label>Yazılım</label><br>
+            <input type="checkbox"> <label>Sinema</label><br>
+        </div>
+        
+        <div>
+            <!--
+            RadioButton'lardan sadece bir tanesi seçilebilir. Bunu sağlayan ise name kısmıdır. Adları aynı olduğu için sadece 1 tanesini seçip sunucuya değer dönebiliriz.
+            -->
+            <label style="font-weight: bolder;"> Hangi yazılım dilini seviyorsun ?</label><br>
+            <input type="radio" name="yd" id="yd"><label>JAVA</label><br>
+            <input type="radio" name="yd" id="yd"><label>C#</label><br>
+            <input type="radio" name="yd" id="yd"><label>PHP</label><br>
+            <input type="radio" name="yd" id="yd"><label>Go</label><br>
+            <input type="radio" name="yd" id="yd"><label>ReactJs</label><br>
+            <input type="radio" name="yd" id="yd"><label>TypeScript</label><br>
+        </div>
+
+        <div>
+            <!--
+            ComboBox tarzı seçmeli bir liste açılır. Seçilen şeyi sunucuya döndürür.
+            -->
+            <label style="font-weight: bolder;"> Hangi ilde yaşıyorsun ?</label><br>
+            <select>
+                <option value="01">Adana</option>
+                <option value="06">Ankara</option>
+                <option value="16">Bursa</option>
+                <option value="34">İstanbul</option>
+                <option value="35">İzmir</option>
+            </select>
+        </div>
+
+    </div>
+</body>
+</html>
