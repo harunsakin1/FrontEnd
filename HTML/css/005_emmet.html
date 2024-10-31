@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    > Bir bileşenin alt kırılımlarına bileşen eklemek için kullanılır.
+    ^ Bileşenin bir üst bileşenine ulaşmak için kullanılır.
+    + Aynı düzeyde bileşenleri eklemek için kullanılır.
+    {} Bileşenin içerisinde yer alan metinleri eklemek için kullanılır.
+     * Bir bileşenden birden fazla eklemek için kullanılır.
+     $ Çoklu bileşen eklerken sıralamanın metin içerisine eklenmesini sağlar.
+     . Bir bileşene class eklemek için kullanılır.
+     # Bir bileşene Id eklemek için kullanılır.
+     () Bir bileşen ile diğer bir bileşenin grup şeklinde kullanımı sırasında karışmaması için kullanılır.
+    -->
+    <!-- 
+    Kullanım : 
+    div>div>label^div>input:text
+    
+    Çıktı : 
+    <div>
+        <div>
+            <label for="">Username</label>
+        </div>
+        <div>
+            <input type="text" name="" id="">
+        </div>
+    </div>-->
+    <!-- 
+    div>label+input:text+button:button
+
+    <div>
+        <label for="">Buraya Adınızı Giriniz</label>
+        <input type="text" name="" id="">
+        <button>Beni Tıkla</button>
+    </div>
+    -->   
+    <!-- 
+    Kullanım : 
+    ul>li{sıra$}*5
+    Çıktı : 
+    <ul>
+        <li>sıra1</li>
+        <li>sıra2</li>
+        <li>sıra3</li>
+        <li>sıra4</li>
+        <li>sıra5</li>
+    </ul>
+    -->
+    <!-- 
+    Kullanım : 
+    table>thead>tr>th{baslik$}*2^^tbody>(tr>td{data$}*2)*3
+    
+    Çıktı : 
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>ad</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>harun</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ali</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ahmet</td>
+                </tr>
+        </tbody>
+    </table>
+    -->
+    
+    
+</body>
+</html>

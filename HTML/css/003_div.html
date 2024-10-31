@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**
+        Margin : Bir elementin dış çeperlerinden olan uzaklarına verilen addır. [left,right,top,bottom]
+        Border : Bir bileşenin dört çevresinde bulunan kenarları birleştiren kenarlığı ifade eder, ayrı ayrı manipüle edilebilir.
+        Padding : Bir bileşenin kendi içerisindeki bileşenlerine olan iç uzaklığını ifade eder.
+        ÖNEMLİ !!! Padding ilgili bileşenin hacminin artmasına neden olur. Bu nedenle sayfa yapısının oranını bozabilir. Kullanırken hesaba katılması gereklidir.
+        */
+        div{
+            border: 1px solid red;
+            padding: 5px;
+            margin: 5px;
+        }
+        button{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .kutu{
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .form-input{
+            padding: 5px;
+            width: 65%;           
+        }
+        .makale-box{
+            border: 2px dotted green;
+            width: 400px;
+            height: 300px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <input class="form-input" type="text" name="ad" id="ad">
+    </div>
+    <div class="div2">
+        <label>Muhammet Hoca ile ReactJS</label>
+    </div>   
+    <div class="div3">
+        Konu ve içeriklerin tam Listesi
+    </div>
+    <div class="makale-box">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam laboriosam asperiores, quod et rerum maxime id nemo ut! Quaerat voluptatem, quas accusantium officiis quos odit eaque nesciunt asperiores ab voluptatum.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi dolore ex nemo nisi ea repellat quasi laborum dolorum, aspernatur numquam reiciendis quis non consectetur amet aliquid earum necessitatibus quam!
+            Nisi nostrum in vitae, ratione ex, autem esse aperiam ea modi exercitationem praesentium! Ad impedit illo eaque voluptatibus explicabo quo. Tempore officiis a fuga iste nihil porro numquam nobis laboriosam.
+            Sapiente quibusdam, nemo pariatur nostrum harum reiciendis numquam tempora dolorem veniam adipisci excepturi porro beatae provident esse! Ad veniam odit, aliquid consequatur eaque molestias asperiores recusandae et voluptatum eos sit.
+            Consequatur quia atque recusandae consequuntur hic veniam blanditiis nemo corrupti, nihil odio harum unde, nesciunt labore natus numquam dicta error repudiandae nam. Soluta, dolores libero odio aliquam quisquam quo provident!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi dolore ex nemo nisi ea repellat quasi laborum dolorum, aspernatur numquam reiciendis quis non consectetur amet aliquid earum necessitatibus quam!
+            Nisi nostrum in vitae, ratione ex, autem esse aperiam ea modi exercitationem praesentium! Ad impedit illo eaque voluptatibus explicabo quo. Tempore officiis a fuga iste nihil porro numquam nobis laboriosam.
+            Sapiente quibusdam, nemo pariatur nostrum harum reiciendis numquam tempora dolorem veniam adipisci excepturi porro beatae provident esse! Ad veniam odit, aliquid consequatur eaque molestias asperiores recusandae et voluptatum eos sit.
+            Consequatur quia atque recusandae consequuntur hic veniam blanditiis nemo corrupti, nihil odio harum unde, nesciunt labore natus numquam dicta error repudiandae nam. Soluta, dolores libero odio aliquam quisquam quo provident!
+        </p>
+    </div>
+    <div>
+        <button type="submit">Buradan Çık</button>
+    </div>
+    <div class="kutu"></div>
+</body>
+</html>
