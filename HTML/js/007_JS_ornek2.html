@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ornek2</title>
+    <style>
+        .buttons{
+            margin: 5px;
+            padding: 2px 5px;
+        }
+        #root{
+            height: 90vh;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="elementEkle('TEXT')" type="button">Input text ekle</button>
+        <button onclick="elementEkle('IMG')" type="button">Image ekle</button>
+        <button onclick="elementEkle('BTN')" type="button">Buton ekle</button>
+    </div>
+    <div id="root">
+
+    </div>
+    <script>
+        /**
+         * Method -> 
+         */ 
+        function elementEkle(eklenecekSey){
+            let newElement;
+            switch(eklenecekSey){
+                case 'TEXT':{
+                    newElement=document.createElement('input');
+                    newElement.setAttribute('type','text');
+                    newElement.setAttribute('placeholder','Lütfen adınızı giriniz');
+                    newElement.setAttribute('style','display: inline-block; width: 90%; color: blueviolet; margin: 5px;');
+                    break;
+                }
+                case 'BTN':{
+                    newElement=document.createElement('button');
+                    newElement.innerText='Yeni bir buton';
+                    newElement.setAttribute('style','padding: 5px; margin: 5px; color: red;')
+                    break;
+                }
+                case 'IMG':{
+                    newElement=document.createElement('img');
+                    newElement.setAttribute('src','https://picsum.photos/150/150');
+                    newElement.setAttribute('style','margin: 5px; border-radius: 50%;');
+                    break;
+                }
+                
+                default:{
+                    alert('Hata meydana geldi!');
+                    break;
+                }
+            }
+            const divRoot=document.getElementById('root');
+            divRoot.appendChild(newElement);
+        }
+        
+
+        
+        
+    </script>
+</body>
+</html>

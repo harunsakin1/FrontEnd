@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa Düzeni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 95vh;
+            border: 2px solid red;     
+        }
+        .header{
+            border: 1px solid blueviolet;
+            height: 15%;
+            margin: 5px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .containerbody{
+            display: flex;
+            flex-direction: row;
+            height: 65%;
+        }
+        .sideMenu{
+            border: 1px solid red;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .body{
+            border: 1px solid red;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .row-2{
+            flex: 2;
+        }
+        .row-10{
+            flex: 10;
+        }
+        .footer{
+            border: 1px solid green;
+            height: 17%;
+            margin: 5px;
+            border-radius: 10px;         
+        }
+        .liste:hover{
+            background-color: grey;
+        }
+        .sideMenu ul{
+            padding: 0;
+        }
+        .sideMenu li{
+            display: flex;
+            list-style-type: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+       1- Üst alanda header kısmı olacak.
+       2- Sol alanda sideMenu
+       3- Orta alanda body
+       4- Altta footer
+    -->
+    <div class="container">
+        <div class="header"></div>  
+        <div class="containerbody">
+            <div class="sideMenu row-2">
+                <ul>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">1.Seçenek</a></li>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">2.Seçenek</a></li>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">3.Seçenek</a></li>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">4.Seçenek</a></li>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">5.Seçenek</a></li>
+                    <li class="liste"><i class="fa-solid fa-atom"></i><a href="">5.Seçenek</a></li>
+                </ul>
+            </div>
+            <div class="body row-10"></div>  
+        </div>      
+                        
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

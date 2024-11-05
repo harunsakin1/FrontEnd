@@ -85,6 +85,10 @@
 .btn-sepet{
     margin-left: 5px;
     margin-top: 10px;
+    display: none;
+}
+.user-card :hover .btn-sepet{
+    display: block;
 }
 .like{
     padding-top: 5px;

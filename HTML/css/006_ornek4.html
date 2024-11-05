@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek 4</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid red;
+            height: 90vh;
+            flex-direction: row;
+        }
+        .firstdiv{
+            border: 1px solid blueviolet;
+            height: 95%;
+            flex: 1;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .bigbox{
+            height: 95%;
+            flex: 1;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .seconddiv{
+            display: flex;
+            border: 1px solid green;
+            height: 20%;
+            margin: 10px;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            color: red;
+            font-size: x-large;
+        }
+        .thirddiv{
+            border: 1px solid salmon;
+            height: 77%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .col-4{
+            flex: 4;
+        }
+        .col-8{
+            flex: 8;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid salmon;
+            height: 33.33%;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .jc-left{
+            justify-content: start;
+        }
+        .jc-center{
+            justify-content: center;
+        }
+        .jc-right{
+            justify-content: end;
+        }
+        .circle{           
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin: 10px;
+            background-color: blueviolet;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firstdiv col-4"></div>
+        <div class="bigbox col-8">
+            <div class="seconddiv">
+                <label class="text">FLEX DIRECTION</label>
+            </div>
+            <div class="thirddiv">
+                <div class="row jc-left">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="row jc-center">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="row jc-right">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

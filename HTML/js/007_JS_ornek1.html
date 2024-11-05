@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ornek1</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        label{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input onchange="getAd()" type="text" id="ad" placeholder="Adınız">
+        <label id="lblAd"></label>
+        <br>
+    </div>
+    <div>
+        <textarea type="text" id="adres" placeholder="Adresiniz"></textarea>
+    </div>
+    <div>
+        <button onclick="uyeKayit()">Kaydet</button>
+    </div>
+    <div>
+        <label id="aciklama"></label>
+    </div>
+    <script>
+        const txtAd=document.getElementById('ad');
+        const txtAdres=document.getElementById('adres');
+        const lblAciklama=document.getElementById('aciklama');
+        const lblAd=document.getElementById('lblAd');
+
+        function getAd(){
+            lblAd.innerText = txtAd.value;
+        }
+        
+        function uyeKayit(){
+            let metin = 'Kayıt başarılı \nad: '+txtAd.value+'\n adres : '+txtAdres.value;
+            lblAciklama.innerText = metin;
+        }
+        
+    </script>
+</body>
+</html>

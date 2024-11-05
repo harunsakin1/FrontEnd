@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru 1</title>
+</head>
+<body>
+    <script>
+        /**
+         * Ürün objesi
+         * id number
+         * ad string
+         * açıklama string
+         * fiyat number
+         * stok number
+         * kategori object
+         * -- id
+         * -- ad
+         * -- parentId
+         */ 
+
+         let urun={
+            id: 16,
+            ad: 'iPhone 16',
+            aciklama: 'Bu bir telefondur',
+            fiyat: 99999,
+            stok: 176,
+            kategori:{
+                id: 7,
+                ad: 'Elektronik',
+                parentId: 3
+            }
+         }
+        //  console.log('Ürünün adı : ',urun.ad);
+        //  console.log('Ürün açıklaması : ',urun.aciklama);
+        //  console.log('Ürün fiyatı : ',urun.fiyat);
+        //  console.log('Ürün stoğu : ',urun.stok);
+        //  console.log('Ürün kategorisi : ',urun.kategori.ad);
+
+         /**
+          * result,
+          * code: number
+          * size: number
+          * page: number
+          * message: string
+          * data: JSONArray [] -- ürün listesi
+          * ---- ürün object
+          * ------- id,ad,url,resim
+          */ 
+         let urunList=[{
+            id:1,
+            ad: 'Laptop',
+            url: 'https://laptop.abc',
+            resim:'https://picsum.photos/200/200'
+         },
+         {
+            id:2,
+            ad: 'Telefon',
+            url: 'https://telefon.abc',
+            resim:'https://picsum.photos/200/200'
+         },
+         {
+            id:3,
+            ad: 'Keyboard',
+            url: 'https://keyboard.abc',
+            resim:'https://picsum.photos/200/200'
+         }]
+        
+         let result={
+            code:200,
+            size:3,
+            page:1,
+            message:'Ürünler başarıyla getirildi',
+            data: urunList
+         }
+         console.log(result.data[1].ad);
+         
+    </script>
+</body>
+</html>

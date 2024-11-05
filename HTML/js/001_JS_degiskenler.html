@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Değişkenler</title>
+</head>
+<body>
+    <h1>JS Değişkenler</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet corrupti corporis dignissimos laboriosam. Obcaecati, velit quidem id dolore fuga ad at amet, eum et iusto officiis doloribus atque, libero eius.</p>
+    <script>
+        /**
+         * IO
+         * console.log('merhaba');
+         * Javascript typesafe bir dil değildir. Yani tip güvenliği
+         * yoktur. Burada kast edilen şey bir değişken belli bir 
+         * türde tanımlanmaz.
+         * JAVA int sayi=5;
+         * JAVA sayi="Harun" diyemeyiz.
+         * JS var sayi=5;
+         * JS var sayi='Harun' diyebiliriz.
+         * JS Datatypes
+         *  var, let, const
+         */
+        console.log('Merhaba');
+        // int sayi=5;
+        var sayi=5;
+        console.log('Degisken degeri : '+sayi); // ifade ve sayı birleştirilir.
+        console.log("Değişken değeri : "+sayi); // ifade ve sayı birleştirilir.
+        console.log("Değişken değeri : ",sayi); // ifade ayrı sayı ayrı çıktılanır.
+        const musteri={
+            ad: 'Harun',
+            adres: 'Bursa'
+        };
+        console.log("Müşteri : "+musteri);
+        console.log("Müşteri : ",musteri);
+
+        const adres='Bursa';
+        /** 
+         * NOT : Bir HTML sayfası JAVA uygulaması gibi hata vermez.
+         * Hata HTML sayfasının yüklenmemesi şeklinde karşımıza çıkar.
+        */
+       // let ad=prompt('Lütfen adınızı giriniz')
+        console.log("Adınız : ",       
+        musteri.ad!==undefined?musteri.ad:'müşteri yok');
+
+        alert('Beklenmeyen durum');
+        
+        
+    </script>
+</body>
+</html>

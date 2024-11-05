@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satış Formu</title>
+    <style>
+        .container{   
+            display: flex;    
+            flex-direction: column;    
+            border: 2px solid red;
+            min-height: 730px;
+
+        }
+        .banner{
+            border: 2px solid green;
+            margin: 5px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .firsttable{
+            border: 2px solid black;
+            margin: 5px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .secondtable{
+            border: 2px solid blueviolet;
+            margin: 5px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .col-1{
+            flex: 1;
+        }
+        .col-2{
+            flex: 2;
+        }
+        .col-10{
+            flex: 10;
+        }
+        .h-200{
+            height: 200px;
+        }
+        .h-500{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="banner col-1 h-200">
+
+        </div>
+        <div class="body">
+            <div class="firsttable col-2 h-500">
+
+            </div>
+            <div class="secondtable col-10 h-500">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek2</title>
+</head>
+<body>
+    <script>
+        let user={
+            id: 5,
+            userName: 'harunsakin',
+            avatar: 'https://picsum.photos/200/200',
+            name: 'Harun SAKIN'
+        }
+        let loginUser={
+            code: 200,
+            data: '',
+            message: '',
+            success: false
+        }
+        console.log('login code : ',loginUser.code);
+        
+        fetch('http://localhost:9090/v1/dev/user/do-login',{
+            method: 'POST',
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({
+                userName: 'harunsakin',
+                password: 'Harunsakin16!'
+            })
+        }).then(data=>data.json())
+        .then(result=>console.log(result)
+        )    
+    </script>
+</body>
+</html>

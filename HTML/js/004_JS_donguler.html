@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Döngüler</title>
+</head>
+<body>
+    <ol id="liste">
+    </ol>
+
+    <script>
+        /**
+         * For loop, while loop .....
+         * 
+         */
+        let isimListesi= ['Harun','Ali','Veli','Ahmet','Mehmet','Ayşe',"Görkem"];
+        const oList=document.getElementById('liste');
+        for(let i=0;i<isimListesi.length;i++){
+            console.log(isimListesi[i]);      
+            oList.innerHTML+='<li style="margin: 5px; background-color: blueviolet">'+isimListesi[i]+'</li>';  
+            oList.setAttribute('style','color: chocolate; border: 1px solid blue;');                         
+        }
+        
+        
+    </script>
+</body>
+</html>

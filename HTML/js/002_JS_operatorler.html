@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operatorler</title>
+</head>
+<body>
+    <script>
+        let s1=4;
+        let s2=7;
+        console.log('toplam : ',(s1+s2));
+        console.log('çıkarma : ',(s1-s2));
+        console.log('çarpma : ',(s1*s2));
+        console.log('bölme : ',(s1/s2));
+        console.log('mod : ',(s1%s2));
+        let toplam=0;
+        toplam+=1;
+        toplam++;
+        console.log('Toplam : ',toplam);
+        let dogruMu=toplam>=s1||s2<100;
+        console.log("Doğru mudur ? : ",dogruMu);
+        
+        /**
+         * İşlem : +, -, *, /, %
+         * Görev : =, +=, -=, *=, /=, %=
+         * Mantık : &&, ||, !(değil)
+         * İlişki : <, >, <=, >=, ==, === 
+         * Prefix & Suffix : ++[], --[], []++, []--
+         * == -> Gevşek eşitlik. Tip dönüşümü yapar.
+         * === -> Daha katıdır. Tip dönüşümü yapmadan kontrol sağlar.
+         */ 
+
+         console.log("5 == '5' ",(5=='5'))
+         console.log("5 === '5' ",(5==='5'))
+        
+        
+    </script>
+</body>
+</html>

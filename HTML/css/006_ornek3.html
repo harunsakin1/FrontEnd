@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek 3</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid darkred;
+            height: 90vh;
+            flex-direction: column;
+        }
+        .header{
+            border: 1px solid green;
+            height: 33%;
+            margin: 10px;
+            flex: 1;
+            border-radius: 10px;
+        }
+        .body{
+            border: 1px solid palevioletred;
+            height: 33%;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+        .footer{
+            display: flex;
+            height: 33%;
+            margin: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .item1{
+            border: 1px solid blueviolet;
+            height: auto;
+            margin: 5px;
+            flex: 1;
+            border-radius: 10px;
+        }
+        .item2{
+            border: 1px solid blueviolet;
+            height: auto;
+            margin: 5px;
+            border-radius: 10px;
+            flex: 1;
+        }
+        .col1{
+            flex:2;
+        }
+        .col2{
+            flex: 8;
+        }
+        .w-100{
+            width: 100%;
+        }
+        .w-80{
+            width: 80%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header w-100"></div>
+        <div class="body w-80"></div>
+        <div class="footer">
+            <div class="item1 col1"></div>
+            <div class="item2 col2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

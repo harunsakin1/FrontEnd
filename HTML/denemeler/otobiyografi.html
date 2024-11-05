@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Harun SAKIN</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid red;
+            height: 95vh;
+            flex-direction: column;
+        }
+        .banner{      
+            display: flex;    
+            flex-direction: column;
+            border: 1px solid blueviolet;
+            height: 15%;
+            margin: 0.75%;
+            background-color: green;
+            color: white;  
+            padding: 5px;                     
+        }       
+        .body{
+            display: flex;
+            border: 1px solid black;
+            margin: 0.75%;
+            height: 60%;
+            background-color: green;
+            color: white;
+        }
+        .footer{
+            display: flex;
+            border: 1px solid black;   
+            margin: 0.75%;
+            height: 15%;  
+            background-color: green;
+            color: white;  
+            align-items: center;             
+        }
+        .footbox{
+            display: flex;
+            height: 50%;
+            margin: 0.75%;   
+            justify-content: center;         
+        }
+        .col-2{
+            flex: 2;
+        }
+        .col-4{
+            flex: 4;
+        }
+        
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+            color: white;
+            font-size: 24px;
+            border: none;
+            text-decoration:none;
+            border-radius: 5px;
+            
+        }
+        .linkedin-btn {
+            background-color: blueviolet;
+        }
+        .github-btn {
+            background-color: aqua;
+        }
+        .instagram-btn {
+            background-color: rgb(235, 214, 30);           
+        }
+        .x-btn {
+            background-color: crimson;
+        }
+        .btn:hover {
+            box-shadow: 6px 6px 15px 6px rgba(0,0,0,0.75);
+            background-color: white;
+            color: green;
+        }
+        .btn:active {
+            background-color: navajowhite;
+            color: rgb(24, 243, 24);
+        }
+               
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="sayi1">
+                <input type="text" name="sayi1" id="s1">
+            </div>
+            <div class="sayi2">
+                <input type="text" name="sayi2" id="s2">
+            </div>
+            <div class="islem">
+                <select name="islem" id="islem">
+                    <option value="topla">Topla</option>
+                    <option value="cikart">Çıkart</option>
+                    <option value="carp">Çarp</option>
+                    <option value="bol">Böl</option>
+                </select>
+            </div>
+            <div class="hesapla">
+                <button onclick="hesapla()">HESAPLA</button>
+            </div>
+            <div class="sonuc">
+                <label id="sonuc"></label>
+            </div>
+            
+        </div>
+        <script>
+            const s1=document.getElementById('s1');
+            const s2=document.getElementById('s2');
+            const islem=document.getElementById('islem');
+            const sonuc=document.getElementById('sonuc');
+
+            function hesapla(){
+                switch(islem.value){
+                    case 'topla':{
+                    let islemSonucu= Number(s1.value)+Number(s2.value);
+                    sonuc.innerText=(s1.value+" + "+s2.value+" işleminin sonucu : ")+islemSonucu;
+                    break;
+                }
+                    case 'cikart':{
+                    let islemSonucu= Number(s1.value)-Number(s2.value);
+                    sonuc.innerText=(s1.value+" - "+s2.value+" işleminin sonucu : ")+islemSonucu;
+                    break;
+                }   
+                    case 'carp':{
+                    let islemSonucu=Number(s1.value)*Number(s2.value);
+                    sonuc.innerText=(s1.value+" * "+s2.value+" işleminin sonucu : ")+islemSonucu;
+                    break
+                }   
+                    case 'bol':{
+                        let islemSonucu=Number(s1.value)/Number(s2.value);
+                        sonuc.innerText=(s1.value+" / "+s2.value+" işleminin sonucu : ")+islemSonucu;
+                        break;
+                }
+                    default :{
+                        alert('Hata meydana geldi!');
+                        break;
+                }         
+            }
+        }
+        </script>
+        <div class="body"></div>
+        <div class="footer">
+            <div class="footbox col-2">                                                 
+                <a href="https://www.linkedin.com/in/harunsakin16/" target="_blank" class="linkedin-btn btn">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>                                              
+            </div>
+            <div class="footbox col-4">
+                <a href="https://github.com/harunsakin1" target="_blank" class="github-btn btn">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+            </div>
+            <div class="footbox col-2">
+                <a href="https://www.instagram.com/harunn.sakin" target="_blank" class="instagram-btn btn">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+            </div>
+            <div class="footbox col-4">
+                <a href="https://www.facebook.com/16harunsakin" target="_blank" class="x-btn btn">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
