@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Attribute</title>
+    <style>
+        .row{
+            display: flex;
+            padding: 10px;
+            background-color: antiquewhite;
+            min-height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-element{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <label id="message" for="">Muhammet Hoca ile JS Dersleri</label>
+    </div>
+    <div class="form-element">
+        <button onclick="renkDegistir()" >Değiştir</button>
+    </div>
+    <script>
+        const lblMesaj=document.getElementById('message');
+        function renkDegistir(){
+            
+            if(lblMesaj.style.color !== 'red'){
+                lblMesaj.style.color='red';
+            }
+            else{
+                lblMesaj.style.color='blue';
+            }
+        }
+        // interval : Belli aralıklarla yapılacak işleri tanımlar.
+        setInterval(()=>{
+            renkDegistir();
+        },500);
+
+        //timeOut : Belli bir süre bekledikten sonra yapılacak işleri tanımlar.
+        setTimeout(()=>{
+            alert('sayfa yüklendikten sonra 3sn geçti, ben geldim');
+        },3000);
+    </script>
+</body>
+</html>
